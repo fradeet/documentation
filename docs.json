@@ -116,5 +116,10 @@
     "family": "Segoe UI",
     "source": "https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/fonts/normal/segoeui.woff",
     "format": "woff"
+  },
+  "integrations": {
+      "clarity": {
+          "projectId": "x7vzg0r2d9"
+      }
   }
 }
