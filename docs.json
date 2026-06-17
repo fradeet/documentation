@@ -108,6 +108,9 @@
   "integrations": {
       "clarity": {
           "projectId": "x7vzg0r2d9"
+      },
+      "ga4": {
+        "measurementId": "G-CZZRF4LXCR"
       }
   },
   "seo": {
