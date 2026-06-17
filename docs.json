@@ -8,10 +8,7 @@
     "light": "#26BD6C",
     "dark": "#166E3F"
   },
-  "favicon": {
-    "light": "/images/Jko-32.svg",
-    "dark": "/images/Jko-32.svg"
-  },
+  "favicon": "/images/Jko-32.svg",
   "icons": {
     "library": "lucide"
   },
