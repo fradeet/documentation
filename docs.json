@@ -46,7 +46,8 @@
                         "icon": "layers",
                         "expanded": true,
                         "pages": [
-                          "intro/what-is-jeekmind"
+                          "intro/what-is-jeekmind",
+                          "intro/contactus"
                         ]
                       },
                       {
@@ -83,7 +84,10 @@
     "dark": "/images/Jko-logo-word-white.png"
   },
   "navbar": {
-    "links": [],
+    "links": [{
+      "label": "联系我们",
+      "href": "/intro/contactus"
+    }],
     "primary": {
       "type": "button",
       "label": "开始使用",
@@ -117,5 +121,9 @@
     "metatags": {
       "bytedance-verification-code": "6Le+eqAvVufQkpxOuswp"
     }
+  },
+  "banner": {
+    "content": "🚀 新用户特惠！注册后赠送 200 算力值！",
+    "dismissible": true
   }
 }
