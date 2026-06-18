@@ -25,56 +25,39 @@
   },
   "navigation": {
     "directory": "card",
-    "dropdowns": [
+    "anchors": [
       {
-        "dropdown": "Dropdown",
-        "hidden": true,
-        "languages": [
+        "anchor": "技灵营销助手",
+        "pages": [
           {
-            "language": "cn",
-            "hidden": true,
-            "products": [
-              {
-                "product": "正式版",
-                "hidden": true,
-                "anchors": [
-                  {
-                    "anchor": "技灵营销助手",
-                    "pages": [
-                      {
-                        "group": "简介",
-                        "icon": "layers",
-                        "expanded": true,
-                        "pages": [
-                          "intro/what-is-jeekmind",
-                          "intro/contactus"
-                        ]
-                      },
-                      {
-                        "group": "功能详情",
-                        "pages": [
-                          "feature/script-agent"
-                        ]
-                      },
-                      {
-                        "group": "实用技巧",
-                        "pages": [
-                          "guide/jko-gen-face-video"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "anchor": "知识星球",
-                    "pages": [
-                      "tips/good-prompt",
-                      "tips/amazon-main-image"
-                    ]
-                  }
-                ]
-              }
+            "group": "简介",
+            "icon": "layers",
+            "expanded": true,
+            "pages": [
+              "intro/what-is-jeekmind",
+              "intro/contactus"
+            ]
+          },
+          {
+            "group": "功能详情",
+            "icon": "ruler",
+            "pages": [
+              "feature/script-agent"
+            ]
+          },
+          {
+            "group": "实用技巧",
+            "icon": "lightbulb",
+            "pages": [
+              "guide/jko-gen-face-video"
             ]
           }
+        ]
+      },
+      {
+        "anchor": "知识星球",
+        "icon": "earth",
+        "pages": [
         ]
       }
     ]
