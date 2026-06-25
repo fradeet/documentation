@@ -1,0 +1,285 @@
+openapi: 3.1.0
+info:
+  title: AI智能助手-开放
+  version: 1.0.0
+  description: ''
+servers:
+  - url: 'http://open.aiassistant.dev.jeekup.top'
+paths:
+  /workflow/seedanceAiVideo:
+    post:
+      summary: seedance
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data:
+                  id: 11
+                  status: Running
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 视频生成
+  /workflow/aiVideo:
+    post:
+      summary: 谷歌omni
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 视频生成
+  /workflow/liveAiVideo:
+    post:
+      summary: seedance（支持人脸）
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data:
+                  id: 11
+                  status: Running
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 视频生成
+  /workflow/getResult:
+    post:
+      summary: 获取生成结果
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data:
+                  id: 20
+                  status: Success
+                  response_json: Example content.
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 视频生成
+  /auth/getToken:
+    post:
+      summary: 01、获取token
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data: 3ebb95074ad7e4fccd2791e908614efb
+                sign: >-
+                  D3VkL2/STIhcEdWF3QV+a8CWzU48jOX9tn2KyR7pn8/izP4d9lsU8951DBMUXWoHvp2ZTd/wqU8qhN84IfxQYrUkp4WObVO9cBXLbuzHQuaqrGlNHCE99z8IOhUc4Cv3BzIC2p32nuhRchgl2M0tbcnbqIIWyRevRGTdBItUr95/Suk0rdGa64b+oqf/q6Cz0Gpu7fjg08Lwl3apboNYcWhLTI19mmDSAn1H6kuYCOQKuruoWCVh+IuKYfuX4neGpis8wDyGXbsYYKE5N/v2DmC8xiILUGCTaHoYlbqsgtShUTv1YtveRY/3CsVQxwyJd0sdCH9T+qKMir4w17dSbw==
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 统一控制
+  /auth/getMyPower:
+    post:
+      summary: 02、获取算力
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data: 1008583
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 统一控制
+  /volcano/getUserAssetList:
+    post:
+      summary: 素材管理列表
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data:
+                  count: 1
+                  list:
+                    - id: 1
+                      user_id: 10
+                      website_id: 10
+                      file_name: 854小姐姐
+                      file_url: >-
+                        https://p3-bot-workflow-sign.byteimg.com/tos-cn-i-mdko3gqilj/db4da158ef7b49369ad258ba25b47dc2.jpg~tplv-mdko3gqilj-image.image?rk3s=81d4c505&x-expires=1808445522&x-signature=vdujF9FoBAwSe88%2Fv5uc4eXbCQU%3D&x-wf-file_name=20260428-095824.jpg
+                      assetType: jpg
+                      file_id: asset-20260429175011-qj6xr
+                      status: 1
+                      message: null
+                      error_code: null
+                      is_delete: 0
+                      create_time: '2026-04-29 17:50:11'
+                      update_time: '2026-04-29 17:50:11'
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 素材管理
+  /volcano/uploadAsset:
+    post:
+      summary: 上传素材
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 素材管理
+  /volcano/delAsset:
+    post:
+      summary: 删除素材
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 素材管理
+  /volcano/editAsset:
+    post:
+      summary: 更新素材名
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 素材管理
+  /volcano/getAssetStatus:
+    post:
+      summary: 获取素材审核结果
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              example:
+                status: 100
+                message: 操作成功
+                data:
+                  id: 1
+                  status: 1
+                  file_name: 854小姐姐
+                  message: null
+        '404':
+          description: 失败
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+      tags:
+        - 素材管理
