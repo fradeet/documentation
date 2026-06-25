@@ -21,9 +21,7 @@
     "options": ["chatgpt", "mcp", "view", "copy"]
   },
   "api": {
-    "openapi": {
-      "source": "openapi_2.json"
-    },
+    "openapi": "toopen.json",
     "playground": {
       "display": "interactive"
     },
@@ -88,14 +86,8 @@
                 ]
               },
               {
-                "anchor": "测试 API 布局",
-                "pages": [
-                  {
-                    "group": "Plant Store API",
-                    "icon": "leaf",
-                    "openapi": "openapi_2.json"
-                  }
-                ]
+                "anchor": "开放端 API 文档",
+                "openapi": "toopen.json"
               }
             ]
           }
